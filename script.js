@@ -50,7 +50,7 @@ submit.addEventListener("click", function (event) {
         password.classList.add("error-placeholder");
         valid = false;
     }
-    else if (!/^(?=.*[A-Za-z])(?=.*\d)(?=.*[^A-Za-z0-9\s])\S{8,}$/.test(password.value)) {
+    else if (!/^(?=.*[A-Za-z])(?=.*\d)(?=.*[^A-Za-z0-9\s])\S{6,}$/.test(password.value)) {
         password.value = "";
         password.placeholder = "Use Letters, numbers & symbols(min 6)";
         password.classList.add("border-red-500");
